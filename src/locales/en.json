@@ -1,0 +1,175 @@
+{
+    "nav": {
+        "home": "Home",
+        "support": "Support Us",
+        "about": "About Us",
+        "blog": "Blog",
+        "gallery": "Gallery",
+        "back": "Back to Blog"
+    },
+    "blog": {
+        "readMore": "Read More",
+        "posts": [
+            {
+                "id": "1",
+                "title": "Restoring the Dry Forest",
+                "description": "Discover how we are working to recover the dry forest ecosystem in Guanacaste.",
+                "content": "The tropical dry forest is one of the most threatened ecosystems in the world. At Fundación Núa, we are implementing innovative reforestation techniques that include planting drought-resistant native species. Our team of biologists constantly monitors tree growth and the return of local fauna. This project seeks not only to restore flora but also to protect vital water sources for nearby communities.",
+                "date": "Nov 23, 2025",
+                "author": "María Rodríguez",
+                "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                "id": "2",
+                "title": "The Importance of Biological Corridors",
+                "description": "Connecting forest patches to allow free movement of wildlife.",
+                "content": "Biological corridors are essential for maintaining the genetic diversity of species. Without them, animal populations become isolated, increasing the risk of local extinction. We are working with private farm owners to create living fences and passage zones that allow jaguars, tapirs, and monkeys to move safely between protected areas.",
+                "date": "Nov 15, 2025",
+                "author": "Carlos Méndez",
+                "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                "id": "3",
+                "title": "Environmental Education in Rural Schools",
+                "description": "Empowering the next generation of nature guardians.",
+                "content": "We firmly believe that education is the key to long-term conservation. Our 'Forest Guardians' program visits rural schools every week to teach children about the importance of biodiversity, recycling, and respect for animals. Through games and practical activities, we are planting the seed of environmental awareness in Costa Rica's future.",
+                "date": "Nov 02, 2025",
+                "author": "Ana Sofía Vargas",
+                "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            }
+        ]
+    },
+    "home": {
+        "heroTitle": "Protecting Costa Rica's Forests",
+        "heroSubtitle": "Join our mission to preserve biodiversity and the future of our planet.",
+        "cta": "Support Us",
+        "aboutTeaser": {
+            "title": "Our Essence",
+            "text": "We are guardians of nature, dedicated to restoring the balance of our ecosystems. Discover who we are and what we fight for every day.",
+            "cta": "Read more about us"
+        },
+        "biodiversity": {
+            "title": "Biodiversity We Protect",
+            "subtitle": "A glimpse into the life that flourishes in our forests."
+        },
+        "godparents": {
+            "title": "Adopt a Tree",
+            "text": "Leave a green footprint on the world. Become a godfather of a native tree and receive updates on its growth and the impact you are generating.",
+            "cta": "I want to Adopt"
+        },
+        "volunteering": {
+            "title": "Join Volunteering",
+            "text": "Do you have willing hands and a green heart? Join our reforestation, cleaning, and environmental education days.",
+            "cta": "Be a Volunteer"
+        },
+        "blogPreview": {
+            "title": "Latest News",
+            "cta": "View more news"
+        },
+        "galleryPreview": {
+            "title": "Gallery",
+            "cta": "View more photos"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "subtitle": "Have questions or want to collaborate? Write to us.",
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Send Message"
+        },
+        "bankInfo": {
+            "title": "Bank Accounts",
+            "iban": "IBAN",
+            "simpe": "SINPE Mobile"
+        }
+    },
+    "support": {
+        "hero": {
+            "title": "Make a Difference Today",
+            "subtitle": "Your contribution helps us protect Costa Rica's forests and wildlife for future generations."
+        },
+        "impact": {
+            "trees": "Plants 5 native trees",
+            "water": "Protects 1 hectare for a month",
+            "air": "Supports full community programs"
+        },
+        "form": {
+            "title": "Make your Donation",
+            "onetime": "One-time Donation",
+            "monthly": "Monthly Donation",
+            "custom_amount": "Or enter other amount",
+            "name": "Name",
+            "name_placeholder": "Your full name",
+            "email": "Email Address",
+            "email_placeholder": "you@email.com",
+            "submit": "Donate Now"
+        },
+        "bank": {
+            "title": "Other Ways to Donate",
+            "subtitle": "You can also make a direct transfer to our bank accounts."
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "origins": {
+            "title": "Our Origins",
+            "text": "Fundación Núa was born from the shared dream of a group of biologists, educators, and nature lovers in San Ramón de Alajuela. It all started in 2018, when we noticed the rapid degradation of local biological corridors and the devastating impact this had on wildlife.\n\nWhat began as small weekend cleanup and reforestation days soon transformed into a community movement. We realized that to achieve real and lasting change, we needed a more formal structure that would allow us to manage resources, establish strategic alliances, and expand our educational reach.\n\nAfter years of hard work, planning, and the immeasurable support of the San Ramón community, Fundación Núa was legally constituted. Today, we are an organization dedicated to active conservation, scientific research, and environmental education, working tirelessly to ensure that future generations inherit a green and vibrant Costa Rica. Our journey is just beginning, and every tree planted is a testament to our commitment to life."
+        },
+        "mission": {
+            "title": "Mission",
+            "text": "To conserve and restore Costa Rica's biodiversity through forest protection, scientific research, and environmental education, empowering communities to live in harmony with nature."
+        },
+        "vision": {
+            "title": "Vision",
+            "text": "To be a leading organization in tropical conservation, recognized for creating sustainable models of coexistence between humans and wildlife, inspiring a global shift towards protecting our planet."
+        },
+        "values": {
+            "title": "Values",
+            "text": "Passion for nature, Scientific integrity, Community commitment, Transparency in action, and Hope for a sustainable future are the pillars that guide our every step."
+        },
+        "objectives": {
+            "title": "Our Objectives",
+            "item1": "Restore 500 hectares of dry and rainforest by 2030.",
+            "item2": "Establish 10 new biological corridors in the western zone.",
+            "item3": "Educate over 5000 students annually on conservation.",
+            "item4": "Promote scientific research applied to local conservation."
+        },
+        "timeline": {
+            "title": "Our History",
+            "item1": {
+                "year": "2018",
+                "title": "The Seed",
+                "desc": "Start of the first volunteer days and conception of the idea."
+            },
+            "item2": {
+                "year": "2020",
+                "title": "Legal Constitution",
+                "desc": "Fundación Núa is officially established as a non-profit NGO."
+            },
+            "item3": {
+                "year": "2023",
+                "title": "First Major Milestone",
+                "desc": "We achieved the reforestation of our first 50 protected hectares."
+            }
+        },
+        "team": {
+            "title": "Our Team",
+            "member1": {
+                "name": "Dr. Elena Castillo",
+                "role": "Executive Director"
+            },
+            "member2": {
+                "name": "MSc. Roberto Vargas",
+                "role": "Conservation Director"
+            },
+            "member3": {
+                "name": "Lic. Ana Morales",
+                "role": "Education Coordinator"
+            }
+        },
+        "location": {
+            "title": "Our Location"
+        }
+    }
+}

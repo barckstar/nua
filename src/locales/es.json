@@ -1,0 +1,175 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "support": "Apóyanos",
+        "about": "Quiénes Somos",
+        "blog": "Blog",
+        "gallery": "Galería",
+        "back": "Volver al Blog"
+    },
+    "blog": {
+        "readMore": "Leer más",
+        "posts": [
+            {
+                "id": "1",
+                "title": "Restauración del Bosque Seco",
+                "description": "Descubre cómo estamos trabajando para recuperar el ecosistema del bosque seco en Guanacaste.",
+                "content": "El bosque seco tropical es uno de los ecosistemas más amenazados del mundo. En Fundación Núa, estamos implementando técnicas de reforestación innovadoras que incluyen la siembra de especies nativas resistentes a la sequía. Nuestro equipo de biólogos monitorea constantemente el crecimiento de los árboles y el regreso de la fauna local. Este proyecto no solo busca restaurar la flora, sino también proteger las fuentes de agua vitales para las comunidades cercanas.",
+                "date": "23 Nov 2025",
+                "author": "María Rodríguez",
+                "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                "id": "2",
+                "title": "La Importancia de los Corredores Biológicos",
+                "description": "Conectando parches de bosque para permitir el libre movimiento de la vida silvestre.",
+                "content": "Los corredores biológicos son esenciales para mantener la diversidad genética de las especies. Sin ellos, las poblaciones de animales quedan aisladas, lo que aumenta el riesgo de extinción local. Estamos trabajando con propietarios de fincas privadas para crear cercas vivas y zonas de paso que permitan a jaguares, dantas y monos moverse con seguridad entre las áreas protegidas.",
+                "date": "15 Nov 2025",
+                "author": "Carlos Méndez",
+                "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            },
+            {
+                "id": "3",
+                "title": "Educación Ambiental en Escuelas Rurales",
+                "description": "Empoderando a la próxima generación de guardianes de la naturaleza.",
+                "content": "Creemos firmemente que la educación es la clave para la conservación a largo plazo. Nuestro programa 'Guardianes del Bosque' visita escuelas rurales cada semana para enseñar a los niños sobre la importancia de la biodiversidad, el reciclaje y el respeto por los animales. A través de juegos y actividades prácticas, estamos sembrando la semilla de la conciencia ambiental en el futuro de Costa Rica.",
+                "date": "02 Nov 2025",
+                "author": "Ana Sofía Vargas",
+                "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            }
+        ]
+    },
+    "home": {
+        "heroTitle": "Protegiendo los Bosques de Costa Rica",
+        "heroSubtitle": "Únete a nuestra misión para preservar la biodiversidad y el futuro de nuestro planeta.",
+        "cta": "Apóyanos",
+        "aboutTeaser": {
+            "title": "Nuestra Esencia",
+            "text": "Somos guardianes de la naturaleza, dedicados a restaurar el equilibrio de nuestros ecosistemas. Descubre quiénes somos y por qué luchamos cada día.",
+            "cta": "Leer más sobre nosotros"
+        },
+        "biodiversity": {
+            "title": "Biodiversidad que Protegemos",
+            "subtitle": "Un vistazo a la vida que florece en nuestros bosques."
+        },
+        "godparents": {
+            "title": "Apadrina un Árbol",
+            "text": "Deja una huella verde en el mundo. Conviértete en padrino de un árbol nativo y recibe actualizaciones sobre su crecimiento y el impacto que estás generando.",
+            "cta": "Quiero ser Padrino"
+        },
+        "volunteering": {
+            "title": "Únete al Voluntariado",
+            "text": "¿Tienes manos dispuestas y un corazón verde? Únete a nuestras jornadas de reforestación, limpieza y educación ambiental.",
+            "cta": "Ser Voluntario"
+        },
+        "blogPreview": {
+            "title": "Últimas Noticias",
+            "cta": "Ver más noticias"
+        },
+        "galleryPreview": {
+            "title": "Galería",
+            "cta": "Ver más fotos"
+        },
+        "contact": {
+            "title": "Contáctanos",
+            "subtitle": "¿Tienes preguntas o quieres colaborar? Escríbenos.",
+            "name": "Nombre",
+            "email": "Correo Electrónico",
+            "message": "Mensaje",
+            "submit": "Enviar Mensaje"
+        },
+        "bankInfo": {
+            "title": "Cuentas Bancarias",
+            "iban": "IBAN",
+            "simpe": "SINPE Móvil"
+        }
+    },
+    "support": {
+        "hero": {
+            "title": "Haz la Diferencia Hoy",
+            "subtitle": "Tu contribución nos ayuda a proteger los bosques y la vida silvestre de Costa Rica para las futuras generaciones."
+        },
+        "impact": {
+            "trees": "Planta 5 árboles nativos",
+            "water": "Protege 1 hectárea por un mes",
+            "air": "Apoya programas comunitarios completos"
+        },
+        "form": {
+            "title": "Haz tu Donación",
+            "onetime": "Donación Única",
+            "monthly": "Donación Mensual",
+            "custom_amount": "O ingresa otro monto",
+            "name": "Nombre",
+            "name_placeholder": "Tu nombre completo",
+            "email": "Correo Electrónico",
+            "email_placeholder": "tu@email.com",
+            "submit": "Donar Ahora"
+        },
+        "bank": {
+            "title": "Otras Formas de Donar",
+            "subtitle": "También puedes hacer una transferencia directa a nuestras cuentas bancarias."
+        }
+    },
+    "about": {
+        "title": "Quiénes Somos",
+        "origins": {
+            "title": "Nuestros Orígenes",
+            "text": "La Fundación Núa nació del sueño compartido de un grupo de biólogos, educadores y amantes de la naturaleza en San Ramón de Alajuela. Todo comenzó en 2018, cuando notamos la rápida degradación de los corredores biológicos locales y el impacto devastador que esto tenía en la fauna silvestre.\n\nLo que empezó como pequeñas jornadas de limpieza y reforestación de fines de semana, pronto se transformó en un movimiento comunitario. Nos dimos cuenta de que para lograr un cambio real y duradero, necesitábamos una estructura más formal que nos permitiera gestionar recursos, establecer alianzas estratégicas y ampliar nuestro alcance educativo.\n\nTras años de arduo trabajo, planificación y el inmensurable apoyo de la comunidad de San Ramón, Fundación Núa se constituyó legalmente. Hoy, somos una organización dedicada a la conservación activa, la investigación científica y la educación ambiental, trabajando incansablemente para asegurar que las futuras generaciones hereden una Costa Rica verde y vibrante. Nuestro viaje apenas comienza, y cada árbol plantado es un testimonio de nuestro compromiso con la vida."
+        },
+        "mission": {
+            "title": "Misión",
+            "text": "Conservar y restaurar la biodiversidad de Costa Rica a través de la protección de bosques, la investigación científica y la educación ambiental, empoderando a las comunidades para convivir en armonía con la naturaleza."
+        },
+        "vision": {
+            "title": "Visión",
+            "text": "Ser una organización líder en conservación tropical, reconocida por crear modelos sostenibles de coexistencia entre el ser humano y la vida silvestre, inspirando un cambio global hacia la protección de nuestro planeta."
+        },
+        "values": {
+            "title": "Valores",
+            "text": "Pasión por la naturaleza, Integridad científica, Compromiso comunitario, Transparencia en la acción y Esperanza por un futuro sostenible son los pilares que guían cada uno de nuestros pasos."
+        },
+        "objectives": {
+            "title": "Nuestros Objetivos",
+            "item1": "Restaurar 500 hectáreas de bosque seco y húmedo para 2030.",
+            "item2": "Establecer 10 nuevos corredores biológicos en la zona de occidente.",
+            "item3": "Educar a más de 5000 estudiantes anualmente en conservación.",
+            "item4": "Fomentar la investigación científica aplicada a la conservación local."
+        },
+        "timeline": {
+            "title": "Nuestra Historia",
+            "item1": {
+                "year": "2018",
+                "title": "La Semilla",
+                "desc": "Inicio de las primeras jornadas de voluntariado y concepción de la idea."
+            },
+            "item2": {
+                "year": "2020",
+                "title": "Constitución Legal",
+                "desc": "Fundación Núa se establece oficialmente como una ONG sin fines de lucro."
+            },
+            "item3": {
+                "year": "2023",
+                "title": "Primer Gran Hito",
+                "desc": "Logramos la reforestación de nuestras primeras 50 hectáreas protegidas."
+            }
+        },
+        "team": {
+            "title": "Nuestro Equipo",
+            "member1": {
+                "name": "Dra. Elena Castillo",
+                "role": "Directora Ejecutiva"
+            },
+            "member2": {
+                "name": "MSc. Roberto Vargas",
+                "role": "Director de Conservación"
+            },
+            "member3": {
+                "name": "Lic. Ana Morales",
+                "role": "Coordinadora de Educación"
+            }
+        },
+        "location": {
+            "title": "Nuestra Ubicación"
+        }
+    }
+}
