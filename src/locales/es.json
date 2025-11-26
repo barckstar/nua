@@ -52,16 +52,6 @@
             "title": "Biodiversidad que Protegemos",
             "subtitle": "Un vistazo a la vida que florece en nuestros bosques."
         },
-        "godparents": {
-            "title": "Apadrina un Árbol",
-            "text": "Deja una huella verde en el mundo. Conviértete en padrino de un árbol nativo y recibe actualizaciones sobre su crecimiento y el impacto que estás generando.",
-            "cta": "Quiero ser Padrino"
-        },
-        "volunteering": {
-            "title": "Únete al Voluntariado",
-            "text": "¿Tienes manos dispuestas y un corazón verde? Únete a nuestras jornadas de reforestación, limpieza y educación ambiental.",
-            "cta": "Ser Voluntario"
-        },
         "blogPreview": {
             "title": "Últimas Noticias",
             "cta": "Ver más noticias"
@@ -101,19 +91,6 @@
             "custom_amount": "O ingresa otro monto",
             "name": "Nombre",
             "name_placeholder": "Tu nombre completo",
-            "email": "Correo Electrónico",
-            "email_placeholder": "tu@email.com",
-            "submit": "Donar Ahora"
-        },
-        "bank": {
-            "title": "Otras Formas de Donar",
-            "subtitle": "También puedes hacer una transferencia directa a nuestras cuentas bancarias."
-        }
-    },
-    "about": {
-        "title": "Quiénes Somos",
-        "origins": {
-            "title": "Nuestros Orígenes",
             "text": "La Fundación Núa nació del sueño compartido de un grupo de biólogos, educadores y amantes de la naturaleza en San Ramón de Alajuela. Todo comenzó en 2018, cuando notamos la rápida degradación de los corredores biológicos locales y el impacto devastador que esto tenía en la fauna silvestre.\n\nLo que empezó como pequeñas jornadas de limpieza y reforestación de fines de semana, pronto se transformó en un movimiento comunitario. Nos dimos cuenta de que para lograr un cambio real y duradero, necesitábamos una estructura más formal que nos permitiera gestionar recursos, establecer alianzas estratégicas y ampliar nuestro alcance educativo.\n\nTras años de arduo trabajo, planificación y el inmensurable apoyo de la comunidad de San Ramón, Fundación Núa se constituyó legalmente. Hoy, somos una organización dedicada a la conservación activa, la investigación científica y la educación ambiental, trabajando incansablemente para asegurar que las futuras generaciones hereden una Costa Rica verde y vibrante. Nuestro viaje apenas comienza, y cada árbol plantado es un testimonio de nuestro compromiso con la vida."
         },
         "mission": {
@@ -170,6 +147,45 @@
         },
         "location": {
             "title": "Nuestra Ubicación"
+        },
+        "godparents": {
+            "title": "Apadrina un Árbol",
+            "subtitle": "Sé parte del crecimiento de un nuevo bosque.",
+            "description": "Convertirse en padrino es un compromiso de amor con la naturaleza. Con tu aporte mensual de $50, garantizas el cuidado integral de un árbol nativo desde su siembra hasta su madurez. No solo estás plantando un árbol, estás restaurando un ecosistema completo, proporcionando hogar a la fauna y aire puro para el futuro.",
+            "price": "$50/mes",
+            "benefits": {
+                "title": "Beneficios de ser Padrino:",
+                "item1": "Certificado digital de adopción personalizado",
+                "item2": "Placa con tu nombre junto al árbol",
+                "item3": "Actualizaciones trimestrales con fotos del crecimiento",
+                "item4": "Coordenadas GPS exactas para visitarlo"
+            },
+            "cta": "Quiero Apadrinar"
+        },
+        "volunteering": {
+            "title": "Voluntariado",
+            "subtitle": "Dona tu tiempo y talento para el planeta.",
+            "description": "No solo necesitamos dinero, también necesitamos manos y corazones dispuestos a trabajar. Únete a nuestra red global de voluntarios y vive una experiencia transformadora.",
+            "roles": {
+                "planting": {
+                    "title": "Reforestación",
+                    "desc": "Ayuda en las jornadas de siembra y mantenimiento del bosque."
+                },
+                "media": {
+                    "title": "Multimedia",
+                    "desc": "Dona fotos y videos profesionales para nuestra difusión."
+                },
+                "care": {
+                    "title": "Cuidado",
+                    "desc": "Participa en el monitoreo de fauna y protección de áreas."
+                }
+            },
+            "expanded": {
+                "title": "Un Día como Voluntario",
+                "description": "Ser voluntario en Fundación Núa es más que trabajo; es una conexión profunda con la tierra. Comenzamos el día con el canto de las aves, aprendiendo sobre las especies nativas que vamos a plantar. Trabajamos hombro a hombro con la comunidad local, compartiendo historias y risas. Al final del día, no solo te llevas la satisfacción de haber dejado una huella verde, sino también nuevos amigos y un propósito renovado. Ya sea que vengas por un día o por un mes, tu impacto perdurará por generaciones.",
+                "image_alt": "Voluntarios plantando árboles en Costa Rica"
+            },
+            "cta": "Unirme al Equipo"
         }
     }
 }

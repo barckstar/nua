@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { motion } from 'framer-motion';
-import { ArrowRight, Heart, Users, TreePine, Leaf, Camera, Mail, CreditCard, Bug, Sprout } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Heart, Users, TreePine, Leaf, Camera, Bug, Sprout, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import BlogCard from '../components/BlogCard';
@@ -18,9 +18,11 @@ interface BlogPost {
     image: string;
 }
 
+
 const Home = () => {
     const { t, language } = useLanguage();
     const [posts, setPosts] = useState<BlogPost[]>([]);
+    const [selectedItem, setSelectedItem] = useState<{ icon: React.ReactNode, label: string, img: string, description: string } | null>(null);
 
     useEffect(() => {
         // Load blog posts from locale file
@@ -105,19 +107,46 @@ const Home = () => {
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {[
-                            { icon: <Leaf size={40} />, label: "Flora", img: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=500" },
-                            { icon: <Bug size={40} />, label: "Fauna", img: "https://images.unsplash.com/photo-1470093851219-69951fcbb533?auto=format&fit=crop&q=80&w=500" },
-                            { icon: <Sprout size={40} />, label: "Fungi", img: "https://images.unsplash.com/photo-1595304355326-88691535d648?auto=format&fit=crop&q=80&w=500" },
-                            { icon: <TreePine size={40} />, label: "Bosque", img: "https://images.unsplash.com/photo-1448375240586-dfd8d395ea6c?auto=format&fit=crop&q=80&w=500" }
+                            {
+                                icon: <Leaf size={40} />,
+                                label: "Flora",
+                                img: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=500",
+                                description: "Discover the immense variety of plant species that form the backbone of our ecosystems, from towering trees to delicate orchids."
+                            },
+                            {
+                                icon: <Bug size={40} />,
+                                label: "Fauna",
+                                img: "https://images.unsplash.com/photo-1470093851219-69951fcbb533?auto=format&fit=crop&q=80&w=500",
+                                description: "Home to a vibrant array of wildlife, including jaguars, tapirs, and countless bird species that thrive in these protected lands."
+                            },
+                            {
+                                icon: <Sprout size={40} />,
+                                label: "Fungi",
+                                img: "https://images.unsplash.com/photo-1595304355326-88691535d648?auto=format&fit=crop&q=80&w=500",
+                                description: "The hidden kingdom of fungi plays a crucial role in nutrient cycling and forest health, often unseen but always essential."
+                            },
+                            {
+                                icon: <TreePine size={40} />,
+                                label: "Bosque",
+                                img: "https://images.unsplash.com/photo-1448375240586-dfd8d395ea6c?auto=format&fit=crop&q=80&w=500",
+                                description: "Our forests are more than just trees; they are complex living communities that provide clean air, water, and life."
+                            }
                         ].map((item, idx) => (
                             <motion.div
                                 key={idx}
+                                layoutId={`card-${item.label}`}
+                                onClick={() => setSelectedItem(item)}
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: idx * 0.1 }}
                                 className="relative group overflow-hidden rounded-2xl aspect-square cursor-pointer"
                             >
-                                <img src={item.img} alt={item.label} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                <motion.img
+                                    layoutId={`image-${item.label}`}
+                                    src={item.img}
+                                    alt={item.label}
+                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
                                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300 flex flex-col items-center justify-center text-white">
                                     <div className="bg-white/20 p-4 rounded-full backdrop-blur-sm mb-2">
                                         {item.icon}
@@ -129,6 +158,53 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Modal */}
+            <AnimatePresence>
+                {selectedItem && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setSelectedItem(null)}
+                        className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+                    >
+                        <motion.div
+                            layoutId={`card-${selectedItem.label}`}
+                            className="bg-white rounded-3xl overflow-hidden w-[90vw] h-[70vh] md:w-[60vw] md:h-[70vh] relative shadow-2xl flex flex-col"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={() => setSelectedItem(null)}
+                                className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+                            >
+                                <X size={24} />
+                            </button>
+
+                            <div className="h-2/3 relative">
+                                <motion.img
+                                    layoutId={`image-${selectedItem.label}`}
+                                    src={selectedItem.img}
+                                    alt={selectedItem.label}
+                                    className="w-full h-full object-cover"
+                                />
+                                <div className="absolute bottom-4 left-6">
+                                    <div className="bg-white/90 p-3 rounded-full backdrop-blur-sm inline-flex text-nua-green-dark shadow-lg">
+                                        {selectedItem.icon}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="h-1/3 bg-nua-cream/30 p-8 flex flex-col justify-center">
+                                <h3 className="text-3xl font-serif font-bold text-nua-green-dark mb-3">{selectedItem.label}</h3>
+                                <p className="text-lg text-gray-700 leading-relaxed">
+                                    {selectedItem.description}
+                                </p>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
             {/* Tree Godparents & Volunteering Grid */}
             <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
@@ -231,58 +307,6 @@ const Home = () => {
                                 <img src={img.src} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                             </motion.div>
                         ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Support & Bank Info */}
-            <section className="py-20 bg-nua-green-dark text-white">
-                <div className="max-w-7xl mx-auto px-4 md:px-8">
-                    <div className="grid md:grid-cols-2 gap-16 items-center">
-                        <motion.div {...fadeInUp}>
-                            <h2 className="text-4xl font-serif font-bold mb-6">{t('support.hero.title')}</h2>
-                            <p className="text-xl opacity-90 mb-8">{t('support.hero.subtitle')}</p>
-
-                            <div className="space-y-6">
-                                <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                                        <CreditCard className="text-nua-green-light" /> {t('home.bankInfo.title')}
-                                    </h3>
-                                    <div className="space-y-2 font-mono text-sm md:text-base">
-                                        <p><span className="opacity-60">{t('home.bankInfo.iban')}:</span> CR00 0000 0000 0000 0000 00</p>
-                                        <p><span className="opacity-60">{t('home.bankInfo.simpe')}:</span> 8888-8888</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6 }}
-                            className="bg-white text-nua-green-dark p-8 md:p-12 rounded-3xl shadow-2xl"
-                        >
-                            <h3 className="text-3xl font-serif font-bold mb-6 text-center">{t('home.contact.title')}</h3>
-                            <p className="text-center text-gray-600 mb-8">{t('home.contact.subtitle')}</p>
-
-                            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                                <div>
-                                    <label className="block text-sm font-bold mb-1 ml-1">{t('home.contact.name')}</label>
-                                    <input type="text" className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-nua-green-light focus:ring-2 focus:ring-nua-green-light/20 outline-none transition-all" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold mb-1 ml-1">{t('home.contact.email')}</label>
-                                    <input type="email" className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-nua-green-light focus:ring-2 focus:ring-nua-green-light/20 outline-none transition-all" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold mb-1 ml-1">{t('home.contact.message')}</label>
-                                    <textarea rows={4} className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-nua-green-light focus:ring-2 focus:ring-nua-green-light/20 outline-none transition-all"></textarea>
-                                </div>
-                                <button className="w-full bg-nua-green-dark text-white font-bold py-4 rounded-xl hover:bg-nua-brown transition-colors shadow-lg flex items-center justify-center gap-2">
-                                    {t('home.contact.submit')} <Mail size={20} />
-                                </button>
-                            </form>
-                        </motion.div>
                     </div>
                 </div>
             </section>

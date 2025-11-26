@@ -52,16 +52,6 @@
             "title": "Biodiversity We Protect",
             "subtitle": "A glimpse into the life that flourishes in our forests."
         },
-        "godparents": {
-            "title": "Adopt a Tree",
-            "text": "Leave a green footprint on the world. Become a godfather of a native tree and receive updates on its growth and the impact you are generating.",
-            "cta": "I want to Adopt"
-        },
-        "volunteering": {
-            "title": "Join Volunteering",
-            "text": "Do you have willing hands and a green heart? Join our reforestation, cleaning, and environmental education days.",
-            "cta": "Be a Volunteer"
-        },
         "blogPreview": {
             "title": "Latest News",
             "cta": "View more news"
@@ -101,19 +91,6 @@
             "custom_amount": "Or enter other amount",
             "name": "Name",
             "name_placeholder": "Your full name",
-            "email": "Email Address",
-            "email_placeholder": "you@email.com",
-            "submit": "Donate Now"
-        },
-        "bank": {
-            "title": "Other Ways to Donate",
-            "subtitle": "You can also make a direct transfer to our bank accounts."
-        }
-    },
-    "about": {
-        "title": "About Us",
-        "origins": {
-            "title": "Our Origins",
             "text": "Fundación Núa was born from the shared dream of a group of biologists, educators, and nature lovers in San Ramón de Alajuela. It all started in 2018, when we noticed the rapid degradation of local biological corridors and the devastating impact this had on wildlife.\n\nWhat began as small weekend cleanup and reforestation days soon transformed into a community movement. We realized that to achieve real and lasting change, we needed a more formal structure that would allow us to manage resources, establish strategic alliances, and expand our educational reach.\n\nAfter years of hard work, planning, and the immeasurable support of the San Ramón community, Fundación Núa was legally constituted. Today, we are an organization dedicated to active conservation, scientific research, and environmental education, working tirelessly to ensure that future generations inherit a green and vibrant Costa Rica. Our journey is just beginning, and every tree planted is a testament to our commitment to life."
         },
         "mission": {
@@ -170,6 +147,45 @@
         },
         "location": {
             "title": "Our Location"
+        },
+        "godparents": {
+            "title": "Adopt a Tree",
+            "subtitle": "Be part of the growth of a new forest.",
+            "description": "Becoming a godparent is a commitment of love to nature. With your monthly contribution of $50, you guarantee the comprehensive care of a native tree from planting to maturity. You are not just planting a tree, you are restoring a complete ecosystem, providing a home for wildlife and clean air for the future.",
+            "price": "$50/mo",
+            "benefits": {
+                "title": "Benefits of being a Godparent:",
+                "item1": "Personalized digital adoption certificate",
+                "item2": "Plaque with your name next to the tree",
+                "item3": "Quarterly updates with growth photos",
+                "item4": "Exact GPS coordinates to visit it"
+            },
+            "cta": "I want to Adopt"
+        },
+        "volunteering": {
+            "title": "Volunteering",
+            "subtitle": "Donate your time and talent for the planet.",
+            "description": "We not only need money, we also need hands and hearts willing to work. Join our global network of volunteers and live a transformative experience.",
+            "roles": {
+                "planting": {
+                    "title": "Reforestation",
+                    "desc": "Help in planting days and forest maintenance."
+                },
+                "media": {
+                    "title": "Multimedia",
+                    "desc": "Donate professional photos and videos for our outreach."
+                },
+                "care": {
+                    "title": "Care",
+                    "desc": "Participate in wildlife monitoring and area protection."
+                }
+            },
+            "expanded": {
+                "title": "A Day as a Volunteer",
+                "description": "Volunteering at Fundación Núa is more than work; it is a deep connection with the earth. We start the day with the song of birds, learning about the native species we are going to plant. We work shoulder to shoulder with the local community, sharing stories and laughter. At the end of the day, you take away not only the satisfaction of having left a green footprint, but also new friends and a renewed purpose. Whether you come for a day or a month, your impact will last for generations.",
+                "image_alt": "Volunteers planting trees in Costa Rica"
+            },
+            "cta": "Join the Team"
         }
     }
 }

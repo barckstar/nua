@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link to="/" className="flex-shrink-0 flex items-center gap-2 z-50">
-                        <img src="/logo.jpeg" alt="Logo" width={100} height={100} />
+                        <img src="/Logo-Sin-Fondo.png" alt="Logo" width={100} height={100} />
                     </Link>
 
                     {/* Controls */}

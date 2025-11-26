@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import SocialSidebar from './SocialSidebar';
 
 interface LayoutProps {
     children: ReactNode;
@@ -10,6 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <div className="min-h-screen flex flex-col bg-nua-cream">
             <Navbar />
+            <SocialSidebar />
             <main className="flex-grow pt-20">
                 {children}
             </main>
